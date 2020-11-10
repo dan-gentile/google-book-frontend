@@ -11,7 +11,8 @@ interface BookData {
 export default {
   getBooks: function (query: string) {
     return axios.get(
-      `https://www.googleapis.com/books/v1/volumes?q=${query}&key=${process.env.REACT_APP_API_KEY}`
+      "https://googlebooksearchbackend.herokuapp.com/api/books",
+      { data: { book: query } }
     );
   },
   getAllSavedBooks: function () {
