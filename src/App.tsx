@@ -7,12 +7,12 @@ import "./App.scss";
 function App() {
   return (
     <Router>
-      <div>
+      <main>
         <Switch>
           <Route exact path="/" component={SearchPage} />
           <Route exact path="/saved" component={SavedPage} />
         </Switch>
-      </div>
+      </main>
     </Router>
   );
 }

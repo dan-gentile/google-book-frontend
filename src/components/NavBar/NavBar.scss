@@ -1,0 +1,31 @@
+@import "../../resets.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+.NavBar {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 4;
+  background-color: #05aff2;
+  display: flex;
+  align-items: center;
+
+  h3 {
+    margin-left: 60px;
+    font-size: 1.75rem;
+    color: #1c1919;
+  }
+
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 60px;
+
+    .nav-link {
+      margin-left: 60px;
+      color: #585757;
+    }
+    .active {
+      color: #1c1919;
+      font-weight: 600;
+    }
+  }
+}

@@ -5,6 +5,7 @@ import "./NavBar.scss";
 export default function NavBar() {
   return (
     <nav className="NavBar">
+      <h3>Book Search</h3>
       <ul>
         <li>
           <Link
