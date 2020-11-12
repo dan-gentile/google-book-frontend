@@ -10,10 +10,8 @@ interface BookData {
 
 export default {
   getBooks: function (query: string) {
-    return axios.get(
-      "https://googlebooksearchbackend.herokuapp.com/api/books",
-      { data: { book: query } }
-    );
+    console.log(query);
+    return axios.get(`http://localhost:8080/api/google/${query}`);
   },
   getAllSavedBooks: function () {
     return axios.get("https://googlebooksearchbackend.herokuapp.com/api/books");
