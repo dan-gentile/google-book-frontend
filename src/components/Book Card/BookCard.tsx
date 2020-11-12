@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import API from "../../utils/API";
 import "./BookCard.scss";
 
@@ -11,8 +11,10 @@ interface BookCardProps {
 }
 
 export default function BookCard(props: BookCardProps) {
+  const [savedState, setSavedState] = useState(false);
   const saveBook = (event: any) => {
     event.preventDefault();
+    setSavedState(true);
     API.saveBookToDatabase({
       title: props.title,
       authors: props.authors,
@@ -25,6 +27,7 @@ export default function BookCard(props: BookCardProps) {
   return (
     <div className="BookCard">
       {!props.image ? null : <img src={props.image} alt={props.title} />}
+      {savedState === false ? null : <div className="alert">Saved!</div>}
       <div className="btnDiv">
         <a href={props.link} target="_blank" rel="noreferrer">
           View
