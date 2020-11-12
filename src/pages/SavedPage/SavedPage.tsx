@@ -7,16 +7,12 @@ import "./SavedPage.scss";
 export default function SavedPage() {
   const [books, setBooks] = useState<Array<any>>([]);
   useEffect(() => {
-    loadBooks();
-  }, [books]);
-
-  const loadBooks = () => {
     API.getAllSavedBooks()
       .then((res) => {
         setBooks(res.data);
       })
       .catch((err) => console.log(err));
-  };
+  }, [books]);
 
   return (
     <main className="SavedPage">

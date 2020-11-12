@@ -10,15 +10,22 @@ interface BookData {
 
 export default {
   getBooks: function (query: string) {
-    return axios.get(`http://localhost:8080/api/google/${query}`);
+    return axios.get(
+      `https://googlebooksearchbackend.herokuapp.com/api/google/${query}`
+    );
   },
   getAllSavedBooks: function () {
-    return axios.get("http://localhost:8080/api/books");
+    return axios.get("https://googlebooksearchbackend.herokuapp.com/api/books");
   },
   saveBookToDatabase: function (bookData: BookData) {
-    return axios.post("http://localhost:8080/api/books", bookData);
+    return axios.post(
+      "https://googlebooksearchbackend.herokuapp.com/api/books",
+      bookData
+    );
   },
   deleteSavedBookFromDatabase: function (id: string) {
-    return axios.delete(`http://localhost:8080/api/books/${id}`);
+    return axios.delete(
+      `https://googlebooksearchbackend.herokuapp.com/api/books/${id}`
+    );
   },
 };

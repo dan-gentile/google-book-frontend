@@ -13,7 +13,6 @@ interface BookCardProps {
 
 export default function BookCard(props: BookCardProps) {
   const deleteBook = (id: string) => {
-    console.log(id);
     API.deleteSavedBookFromDatabase(id).catch((err) => console.log(err));
   };
 
