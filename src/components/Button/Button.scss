@@ -1,0 +1,17 @@
+button {
+  border: none;
+  outline: none;
+  background: none;
+  color: #05aff2;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0 20px;
+  cursor: pointer;
+
+  &:hover {
+    color: #1c1919;
+  }
+  &:focus {
+    color: #021f59;
+  }
+}

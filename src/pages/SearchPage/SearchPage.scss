@@ -1,0 +1,24 @@
+.BookResults {
+  grid-row: 3 / span 1;
+  grid-column: 2 / span 1;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 80px;
+
+  .NoBooks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 98%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+  }
+}

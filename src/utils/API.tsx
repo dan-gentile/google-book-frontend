@@ -4,27 +4,21 @@ interface BookData {
   title: string;
   authors: string;
   description: string;
-  image: string;
+  image?: string;
   link: string;
 }
 
 export default {
   getBooks: function (query: string) {
-    console.log(query);
     return axios.get(`http://localhost:8080/api/google/${query}`);
   },
   getAllSavedBooks: function () {
-    return axios.get("https://googlebooksearchbackend.herokuapp.com/api/books");
+    return axios.get("http://localhost:8080/api/books");
   },
   saveBookToDatabase: function (bookData: BookData) {
-    return axios.post(
-      "https://googlebooksearchbackend.herokuapp.com/api/books",
-      bookData
-    );
+    return axios.post("http://localhost:8080/api/books", bookData);
   },
   deleteSavedBookFromDatabase: function (id: string) {
-    return axios.delete(
-      "https://googlebooksearchbackend.herokuapp.com/api/books/" + id
-    );
+    return axios.delete(`http://localhost:8080/api/books/${id}`);
   },
 };

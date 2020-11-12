@@ -3,6 +3,5 @@ main {
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr minmax(500px, 1fr) 1fr;
-  grid-template-rows: 100px 240px 1fr;
-  background-color: #f7f7fa;
+  grid-template-rows: 100px 240px min-content;
 }

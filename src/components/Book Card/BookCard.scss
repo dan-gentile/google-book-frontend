@@ -1,0 +1,35 @@
+.BookCard {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 5px;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+  width: 98%;
+  h4 {
+    margin-bottom: 6px;
+  }
+
+  img {
+    width: 150px;
+    margin: 0 auto;
+  }
+  .btnDiv {
+    display: flex;
+    margin: 10px auto;
+
+    a {
+      color: #05aff2;
+      font-weight: 300;
+      font-size: 18px;
+      margin: 0 20px;
+      cursor: pointer;
+
+      &:hover {
+        color: #1c1919;
+      }
+      &:focus {
+        color: #021f59;
+      }
+    }
+  }
+}
