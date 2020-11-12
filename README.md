@@ -20,7 +20,7 @@
 Search the Google Books API! Read a short description of each book, view the book on Google Books, want to save the book? Click save and the book with be added to the saved database, after the book has been read or is no longer needed to be saved go ahead and delete it! API is set up in the repo [google-backend](https://github.com/dan-gentile/google-book-backend) This app is built with React, SCSS and TypeScript.
 ​
 Check it out!
-<>
+<https://googlebooksearchfrontend.herokuapp.com/>
 
 ### Technologies
 
